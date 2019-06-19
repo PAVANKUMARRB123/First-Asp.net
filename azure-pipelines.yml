@@ -1,4 +1,8 @@
 # ASP.NET
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
 - task: UseDotNet@2
   inputs:
     packageType: 'sdk'
